@@ -2,7 +2,7 @@
 
 '''
 window = Tk()                           #   Initialize/Create a basic window.
-window.title("Calc+")                   #   Title of the window.
+window.title("Title")                   #   Title of the window.
 window.geometry("500x500")              #   Window size.
 window.resizable(False,False)       #   Prevents user from resizing the window.
 
@@ -24,7 +24,6 @@ def calculate(*args):
     try:
         value = float(meter.get())
         #   meters = (0.3048 * feet * 10000.0 + 0.5) / 10000.0
-
         #   feet = ((meters * 10000.0) - 0.5)/(0.3045 * 10000.0)
         feet.set(round(int((value * 10000.0) - 0.5)/(0.3045 * 10000.0),6))
     except ValueError:
