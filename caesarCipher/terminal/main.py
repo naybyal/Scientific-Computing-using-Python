@@ -1,6 +1,6 @@
 global distance
 
-def ceasarEncrypt(message):
+def caesarEncrypt(message):
     encryptedMessage = ""
     for ch in message:
         ordinalValue = ord(ch)
@@ -12,7 +12,7 @@ def ceasarEncrypt(message):
     return encryptedMessage
 
 
-def ceasarDecrypt(encryptedMessage):
+def caesarDecrypt(encryptedMessage):
     message = ""
     for ch in encryptedMessage:
         cipherValue = ord(ch)

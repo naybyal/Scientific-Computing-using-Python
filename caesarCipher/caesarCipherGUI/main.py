@@ -2,7 +2,7 @@ from tkinter import *
 from tkinter import ttk
 global distance
 
-def ceasarEncrypt(message):
+def caesarEncrypt(message):
     encryptedMessage = ""
 
     for ch in message:
@@ -15,7 +15,7 @@ def ceasarEncrypt(message):
     return encryptedMessage
 
 
-def ceasarDecrypt(encryptedMessage):
+def caesarDecrypt(encryptedMessage):
     message = ""
     for ch in encryptedMessage:
         cipherValue = ord(ch)
@@ -28,7 +28,7 @@ def ceasarDecrypt(encryptedMessage):
 
 
 root = Tk()
-root.title("Ceasar Cipher!")
+root.title("Caesar Cipher!")
 
 frame = ttk.Frame(root, padding=10)
 frame.grid(row=0, column=0, sticky=(N, W, E, S))
@@ -39,7 +39,7 @@ message_entry = ttk.Entry(frame)
 distance_label = ttk.Label(frame, text='Enter the distance ')
 distance_entry = ttk.Entry(frame)
 
-submit_btn = ttk.Button(frame, text='Encrypt', command=ceasarEncrypt)
+submit_btn = ttk.Button(frame, text='Encrypt', command=caesarEncrypt)
 
 message_label.grid(column=0, row=0, sticky=W)  # Used 'sticky' to align the widgets to the left
 message_entry.grid(column=1, row=0, sticky=(W, E))  # Used 'sticky' to expand the entry widget horizontally
