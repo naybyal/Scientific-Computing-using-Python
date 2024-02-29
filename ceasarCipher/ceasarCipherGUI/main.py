@@ -31,10 +31,27 @@ root = Tk()
 root.title("Ceasar Cipher!")
 
 frame = ttk.Frame(root, padding=10)
-frame.grid()
+frame.grid(row=0, column=0, sticky=(N, W, E, S))
 
-ttk.Label(frame, text='Ceasar Cipher!').grid(column=0, row=0)
-ttk.Button(frame, text='Encrypt', command=ceasarEncrypt).grid(column=1, row=0)
+message_label = ttk.Label(frame, text='Enter your message ')
+message_entry = ttk.Entry(frame)
+
+distance_label = ttk.Label(frame, text='Enter the distance ')
+distance_entry = ttk.Entry(frame)
+
+submit_btn = ttk.Button(frame, text='Encrypt', command=ceasarEncrypt)
+
+message_label.grid(column=0, row=0, sticky=W)  # Used 'sticky' to align the widgets to the left
+message_entry.grid(column=1, row=0, sticky=(W, E))  # Used 'sticky' to expand the entry widget horizontally
+distance_label.grid(column=0, row=1, sticky=W)  # Used 'sticky' to align the widgets to the left
+distance_entry.grid(column=1, row=1, sticky=(W, E))  # Used 'sticky' to expand the entry widget horizontally
+submit_btn.grid(column=1, row=2, sticky=W)  # Changed row number to match the row where the other widgets are placed
+
+
+# message_label.pack()
+# message_entry.pack()
+# distance_label.pack()
+# distance_entry.pack()
 
 root.mainloop()
 
