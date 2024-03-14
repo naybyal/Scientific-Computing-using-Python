@@ -4,7 +4,7 @@ def cosXSeriesSum(x, n):
     # here x is in degree. 
     # we have to convert it to radian  
     # for using it with series formula,  
-    # as in series expansion angle is in radian 
+    # as in series expansion angle is in radian
     x = x * (PI / 180.0);  
     res = 1; 
     sign = 1;  
