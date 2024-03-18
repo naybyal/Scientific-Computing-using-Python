@@ -18,3 +18,11 @@ Aliasing and Side-effects
         list object. They are ALIASES for the same object. 
 
             This phenomenon is known as aliasing.
+
+
+
+Dictionary
+-----------     
+    Dictionaries are similar to lists
+    
+    
