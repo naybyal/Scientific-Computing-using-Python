@@ -12,3 +12,11 @@ def average(list):
 
 list = [5,10,15,20,25]
 print(average(list))
+
+#   boolean functions   ->  return boolean values
+
+def odd(n):
+    return n%2 != 0 
+
+print(odd(5))
+print(odd(6))
