@@ -9,8 +9,11 @@ info = {}
 info['name'] = 'Sandy'
 info['occupation'] = 'Hacker'
 
-print(info.get('name'))
+# print(info.get('name'))
 
-info.pop('name')
-print(info)
-print(info.get('occupation'))
+# info.pop('name')
+# print(info)
+# print(info.get('occupation'))
+
+for key in info:
+    print(key, info[key])
