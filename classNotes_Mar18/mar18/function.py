@@ -10,5 +10,5 @@ def average(list):
 
     return sum/len(list)
 
-list = [1,2,3,4,5]
+list = [5,10,15,20,25]
 print(average(list))
