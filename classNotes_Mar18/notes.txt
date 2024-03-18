@@ -1,0 +1,20 @@
+Aliasing and Side-effects
+
+    *   refer mutator.py
+
+            first = [10, 20, 30]
+
+            second = first      # aliasing effect
+            print(first)
+
+            first[1] = 99
+            print(first)
+            print(second)
+
+    *   in this example, single object is created and modified using subscript operator
+        when the second element of the list named 'first' is replaced, the second element of the list
+        named 'second' is replaced also. This type of change is what is known as SIDE-EFFECT. This happens 
+        because after the assignment (second = first), the variables first and second refer to the exact same
+        list object. They are ALIASES for the same object. 
+
+            This phenomenon is known as aliasing.
