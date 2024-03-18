@@ -6,7 +6,7 @@
 
 first = [10, 20, 30]
 
-second = first
+second = first      # aliasing effect
 print(first)
 
 first[1] = 99
