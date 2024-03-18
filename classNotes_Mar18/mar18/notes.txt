@@ -25,4 +25,5 @@ Dictionary
 -----------     
     Dictionaries are similar to lists
     
+    PhoneBook : ('Savannah' : '476')
     
