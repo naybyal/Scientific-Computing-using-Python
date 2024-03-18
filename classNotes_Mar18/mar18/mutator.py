@@ -12,3 +12,11 @@ print(first)
 first[1] = 99
 print(first)
 print(second)
+
+
+first = [20,30,40]
+second = first
+third = [20,30,40]
+
+print(first == second)
+print(first == third)   # values are the same hence true.
