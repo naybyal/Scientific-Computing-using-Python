@@ -76,3 +76,26 @@ position()
     -> return the current position of (x, y)
 
     eg.print(t.position())
+
+
+
+OBJECT INSTANTIATION 
+
+    the process of creating objects is called object instantiation  or simply instantiating an object.  
+
+    eg. varName = ClassName(args)
+
+    The Turtle class is defined in the turtle module. The following code then imports the Turtle class.
+
+            from turtle import *    or      from turtle import Turtle
+
+    the next code segement creates and returns a Turtle object and opens a drawing window.
+
+            t = Turtle()
+
+
+
+DRAWING 2D SHAPES
+
+
+
