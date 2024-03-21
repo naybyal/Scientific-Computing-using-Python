@@ -29,6 +29,50 @@ Turtle Attributes :
 
 - TURTLE METHODS -
 
+Turtle()
+    -> creates a new turtle object and opens its window
 
+    eg. t = Turtle()
 
+home()
+    -> moves turtle t to the center of the window and then points t to the east.
+
+    eg. t.home()
+
+up()
+    -> raises turtle t's pen from the drawing surface.
+
+    eg. t.up()
+
+down()
+    -> lowers turtle t's pen to the drawing surface.
+
+    eg. t.down()
+
+setheading(degrees)
+    -> points turtle t in the indicated direction which is specified in degrees
+            east    - 0deg
+            north   - 90deg
+            west    - 180deg
+            south   - 270deg
+
+    eg. t.setheading(90)
+
+left(degrees)
+
+    eg. t.left(90)
+
+right(degrees)
+
+    eg. t.right(90)
+
+goto(x,y)
+    -> 
+
+forward(distance)
+    -> moves turtle t to the specified distance in the current direction
     
+position()
+    -> return the current position of (x, y)
+
+    eg.print(t.position())
