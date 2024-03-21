@@ -1,2 +1,30 @@
     --  TURTLE GRAPHICS --  
 
+Turtle Graphics toolkit provides a simple and enjoyable way to draw pictures in a window and gives you an
+opportunity to run several methods with an object. 
+
+Arrow head -> 
+        initial position -> home  /_\ (x, y)  -> this arrow head is called turtle.
+
+Turtle Attributes :
+    -color  -> initially black; color can be changed to any of more than 16 million other colors.
+
+    -width  -> thickness of the line drawn by the turtle, when it moves.
+                initial width is 1px.
+
+    -down   -> if the pen is down, we can draw the lines.
+                This attribute which can either be true or false controls whether the turtle's pen is up or down.
+
+                When true, the turtle draws a line when it moves.
+                When false, the turtle can move w/out drawing a line.
+
+    -heading->  direction that the turtle is facing. It initially points to the east.
+
+                specified in degrees, the heading or direction increases in value as the turtle turns to the left
+                or counter clockwise. Turtle intially faces the east or 0deg north-east 90deg
+
+
+
+- TURTLE METHODS -
+
+    
