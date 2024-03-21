@@ -25,6 +25,10 @@ Turtle Attributes :
 
 
 
+<import turtle> or <from turtle import *>
+
 - TURTLE METHODS -
+
+
 
     
