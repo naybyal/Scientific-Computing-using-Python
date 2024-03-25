@@ -1,0 +1,66 @@
+Colors and RGB s/m
+    t.pencolor("Red")
+    
+            (r,g,b) = (0,0,0)
+
+            0 to 255    (total 256)
+
+
+h/w
+    4 squares, each at the corner of the window
+    each square should be of different color 
+
+
+
+
+IMAGE PROCESSSING
+
+    jpeg, gif, lossless compression, lossy compression
+
+
+    IMAGE MANIPULATION OPERATIONS
+
+            https://medium.com/@parasraorane/image-manipulation-in-python-without-external-libraries-8a7996b1155a
+
+    //  import an image
+
+        from image import Image
+
+        image = Image("smokey.gif")
+        image.draw()
+
+
+i = Image(filename)
+        loads and returns an image with the give file name 
+
+i= Image(width, height)
+        creates and returns a blank image with the given dimensions. The color of each pixel is white and the filename 
+        is the empty string
+
+i.getWidth()
+        returns the width of i in pixels.
+
+i.getHeight()
+        returns the height of i in pixels.
+
+i.getPixel(x, y)
+        returns a tuple of integers representing the RGB values of the pixel at the position (x, y)
+
+i.setPixel(x,y, (r,g,b))
+        replaces the RGB values at the position (x,y) with the RGB value given by the tuple (r,g,b)
+
+i.draw()
+        display i in a window
+
+        the user must close the window to return control to the methods caller
+
+i.clone()
+        returns a copy of i
+
+i.save()
+        saves i under its current filename
+
+i.save(filename)
+        saves i under filename and automatically adds a '.gif' extension if the filename doesn't contain it.
+
+
