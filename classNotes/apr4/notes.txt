@@ -1,0 +1,19 @@
+
+
+color img to b/w
+
+    The `blackAndWhite` function takes an image as input and converts it into a black and white (grayscale) version. It does this by iterating through each pixel in the image, calculating the average of its RGB values, and then setting the pixel to either black or white depending on whether the average is below or above a threshold value of 128.
+
+Here's a breakdown of what the code does:
+
+1. Define black and white pixel values as tuples `(0,0,0)` and `(255, 255, 255)`, respectively, representing black and white colors in RGB format.
+2. Iterate through each pixel of the image using nested loops, one for rows (`y`) and another for columns (`x`).
+3. Get the RGB values of the current pixel.
+4. Calculate the average of the RGB values by summing them and dividing by 3.
+5. If the average is less than 128, set the pixel to black, otherwise set it to white.
+6. Repeat this process for all pixels in the image.
+7. Finally, return the modified image.
+
+This function effectively converts a color image into a grayscale image by assigning black or white colors based on the brightness of each pixel.
+
+
