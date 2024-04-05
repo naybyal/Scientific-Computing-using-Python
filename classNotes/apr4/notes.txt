@@ -17,3 +17,8 @@ Here's a breakdown of what the code does:
 This function effectively converts a color image into a grayscale image by assigning black or white colors based on the brightness of each pixel.
 
 
+
+
+h/w assignment
+    -> Blurring and image
+    -> Edge detection

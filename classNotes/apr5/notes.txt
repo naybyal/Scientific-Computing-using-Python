@@ -1,0 +1,40 @@
+__init__
+
+    def __init__ (self, name, number):
+    self._name = name
+    self._scores = []
+
+    for count in range(number):
+        self._scores.append(0)
+
+
+    "self" is analogous to "this"
+
+
+The __init__ is also called the Class Constructor because it is run automatically when a user instatiates the Class.
+Thus, when the code segment s = Student("Juan", 5)
+        Python automatically runs the constructor or __init__ method of the Student class. 
+The purpose of the constructor is to initialize an individual's object attribute. The attributes of an object are represented
+as instance variables. Within the class definitions, the names of instance variables must begin with "self". In this code, the
+instance variable self._name and self._scores are initialized to a String and a List respectively.
+
+
+
+--GUI BASED PROGRAMS--
+
+window & labels
+
+    from tkinter import *
+    class LabelDemo(Frame):
+        def __init__(self):
+            Frame.__init__(self)
+            self.master.title("Label Demo")
+            self.grid()
+            self._label = Label(self, text="Hello World")
+            self._label.grid()
+        
+
+        def main():
+            LabelDemo().mainloop()
+
+    main()
