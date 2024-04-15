@@ -1,0 +1,53 @@
+Class
+    from student import student
+
+    import Student class from student module
+
+
+    s = Student("XYZ", 5)
+
+    print(s)
+        name: "xyz'
+        scores: 0 0 0 5
+
+    s.getHighScore()
+        returns 5
+
+
+
+class Student(object):
+    def __init__(self, name, number):
+        self._name = name
+        self._scores = []
+
+        for count in range(numbers):
+            self._scores.append(0)
+
+
+    def getName(self):
+        return self._name
+
+    def setScore(self, i, score):
+        self._scores[i-1] = score
+
+    def getScore(self, i):
+        return self._scores[i-1]
+
+    def getAverage(self):
+        return sum(self._scores)/len(self._scores)
+
+    def getHighScore(self):
+        return max(self._scores)
+
+    
+
+
+Accessors and Mutators
+    accessors -> observe the change... not change the state of the object
+        methods that allow a user to observe but not change the state of an object are called accessors
+    EG. getScore
+    
+    Methods that allow a user to modify an object's states are called MUTATORS;
+
+    EG. setScore
+
