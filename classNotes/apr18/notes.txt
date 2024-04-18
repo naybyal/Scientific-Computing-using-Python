@@ -1,0 +1,100 @@
+#   Structuring classes with Inheritance & Polymorphism
+
+    Superclass and Subclass: Inheritance involves two types of classes - superclass and subclass. 
+                            The superclass (also known as parent class or base class) is the class from which attributes and methods are inherited. 
+                            The subclass (also known as child class or derived class) is the class that inherits from the superclass.
+
+    Syntax: In Python, inheritance is achieved by placing the name of the superclass in parentheses after the name of the subclass when defining the subclass.
+
+    Inheriting Attributes and Methods: When a subclass inherits from a superclass, it automatically gains access to all the attributes and methods of the superclass. 
+                                        This means that the subclass can use and manipulate these attributes and methods without redefining them.
+
+    Overriding Methods: Subclasses can override methods of the superclass by providing a new implementation of the method with the same name. 
+                        This allows subclasses to customize the behavior of inherited methods to suit their specific needs.
+
+    Access to Superclass Methods: Subclasses can call methods of the superclass using the super() function. 
+                            This is useful when you want to extend the functionality of the superclass method in the subclass while still retaining the original behavior.
+
+    Multiple Inheritance: Python supports multiple inheritance, which means a subclass can inherit from more than one superclass. 
+                            This allows for complex class hierarchies but should be used with caution to avoid ambiguity.
+
+
+
+# Define a superclass
+class Animal:
+    def __init__(self, name):
+        self.name = name
+    
+    def speak(self):
+        return "Animal speaks"
+
+# Define a subclass that inherits from Animal
+class Dog(Animal):
+    def speak(self):
+        return "Woof!"
+
+# Define another subclass that inherits from Animal
+class Cat(Animal):
+    def speak(self):
+        return "Meow!"
+
+# Create instances of the subclasses
+dog = Dog("Buddy")
+cat = Cat("Whiskers")
+
+# Access inherited attributes
+print(dog.name)  # Output: Buddy
+print(cat.name)  # Output: Whiskers
+
+# Call inherited method
+print(dog.speak())  # Output: Woof!
+print(cat.speak())  # Output: Meow!
+
+
+
+
+Sure, let's explore both hybrid inheritance and hierarchical inheritance in Python:
+
+1. **Hierarchical Inheritance**:
+   - In hierarchical inheritance, one class serves as the superclass for multiple subclasses.
+   - Each subclass inherits attributes and methods from the same superclass.
+   - This creates a tree-like structure where the superclass is at the top, and subclasses form branches below it.
+   - Hierarchical inheritance promotes code reuse and allows for creating specialized classes based on a common superclass.
+   - Example:
+     ```python
+     class Animal:
+         def speak(self):
+             pass
+
+     class Dog(Animal):
+         def speak(self):
+             return "Woof!"
+
+     class Cat(Animal):
+         def speak(self):
+             return "Meow!"
+
+     # Here, both Dog and Cat inherit from the Animal superclass.
+     ```
+
+2. **Hybrid Inheritance**:
+   - Hybrid inheritance combines characteristics of multiple types of inheritance, including single, multiple, and hierarchical inheritance.
+   - In hybrid inheritance, classes are interconnected in a complex manner, often forming a combination of inheritance patterns.
+   - This type of inheritance allows for creating diverse class relationships, but it can also lead to complex class hierarchies and potential issues like the diamond problem.
+   - Example:
+     ```python
+     class Animal:
+         def speak(self):
+             pass
+
+     class Pet:
+         def play(self):
+             pass
+
+     class Dog(Animal, Pet):
+         def speak(self):
+             return "Woof!"
+
+     # Here, Dog inherits from both Animal and Pet classes, forming a hybrid inheritance pattern.
+     ```
+
