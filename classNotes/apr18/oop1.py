@@ -20,5 +20,5 @@ class Teacher(Person):
         print("Experience : ", self.exp, "yrs")
 
 
-t1 = Teacher("xyz", 38, "OOP", 10)
+t1 = Teacher("xyz", 38, "OOP", 8)
 t1.disData()
