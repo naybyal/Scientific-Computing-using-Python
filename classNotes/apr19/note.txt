@@ -1,0 +1,29 @@
+illustrate w/ the help of real-time example, multilevel inheritance
+
+
+---
+POLYMORPHISM
+
+...eg..
+
+from bank import SavingsAccount
+
+class RestrictedSavingsAccount(savingsAccount):
+    MAX_withdrawals = 3
+
+    def __init__A(self, name, pin, balance=0.0):
+        savingsAccount.__init__(self, name, pin, balance)
+        self._counter = 0
+
+    def withdraw(self, amount):
+        if self._counter == RestrictedSavingsAccount.MAX_withdrawals:
+            return "Reached maximum withdrawal limit! Try again later."
+        else:
+            message = SavingsAccount.withdraw(self, amount)
+
+            if message == None:
+                self._counter += 1
+                return message
+
+            def resetCounter(self):
+                self._counter = 0
