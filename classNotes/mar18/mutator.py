@@ -19,4 +19,3 @@ second = first
 third = [20,30,40]
 
 print(first == second)
-print(first == third)   # values are the same hence true.
