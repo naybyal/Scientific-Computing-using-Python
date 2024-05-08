@@ -17,5 +17,5 @@ def drawPolygon(t, vertices):
     for (x,y) in vertices:
         t.goto(x,y)
 
-drawPolygon(t,[(20,20), (-20,20), (-20,-20)])
+drawPolygon(t,[(20,20), (-20,20), (-20,-20), [20, -20]])
 my_window.mainloop()

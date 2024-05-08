@@ -1,6 +1,6 @@
 from PIL import Image
 
-img = Image.open('/home/nabiel/PycharmProjects/Scientific-Computing-using-Python/classNotes/apr4/bonsai.jpg')
+img = Image.open('/bonsai.jpg')
 
 def grayScale(image):
     (width, height) = image.size  

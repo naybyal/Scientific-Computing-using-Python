@@ -64,3 +64,70 @@ i.save(filename)
         saves i under filename and automatically adds a '.gif' extension if the filename doesn't contain it.
 
 
+
+
+
+
+//      using Pillow
+
+Sure, here are the corresponding notes for image manipulation operations using the Pillow (PIL) library in Python:
+
+```python
+from PIL import Image
+```
+
+- **Import an image**:
+  ```python
+  image = Image.open("smokey.gif")
+  image.show()
+  ```
+
+- **Create an image**:
+  ```python
+  image = Image.new('RGB', (width, height), 'white')
+  ```
+
+- **Get image dimensions**:
+  ```python
+  width, height = image.size
+  ```
+
+- **Get pixel RGB values**:
+  ```python
+  pixel_value = image.getpixel((x, y))
+  ```
+
+- **Set pixel RGB values**:
+  ```python
+  image.putpixel((x, y), (r, g, b))
+  ```
+
+- **Display image**:
+  ```python
+  image.show()
+  ```
+
+- **Clone an image**:
+  ```python
+  cloned_image = image.copy()
+  ```
+
+- **Save image**:
+  ```python
+  image.save("output_image.jpg")
+  ```
+
+Now, let's compare these methods with the ones from your medium link:
+
+| Image Manipulation Operation | Pillow (PIL) | Without External Libraries |
+|------------------------------|--------------|---------------------------|
+| Import an image              | `Image.open("filename")` | `Image("filename")` |
+| Create an image              | `Image.new('mode', (width, height), 'color')` | `Image(width, height)` |
+| Get image dimensions         | `image.size` | Not mentioned |
+| Get pixel RGB values         | `image.getpixel((x, y))` | Not mentioned |
+| Set pixel RGB values         | `image.putpixel((x, y), (r, g, b))` | Not mentioned |
+| Display image                | `image.show()` | `image.draw()` |
+| Clone an image               | `image.copy()` | Not mentioned |
+| Save image                   | `image.save("filename")` | `image.save(filename)` |
+
+It's important to note that Pillow (PIL) is a powerful library that provides a wide range of image manipulation capabilities, including support for various image formats, resizing, cropping, filtering, and more.
