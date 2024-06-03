@@ -5,7 +5,6 @@ img = Image.open('/home/nabiel/PycharmProjects/Scientific-Computing-using-Python
 def blackAndWhite(image):
     blackPixel = (0,0,0)
     whitePixel = (255, 255, 255)
-
     width, height = image.size  
 
     for y in range(height):  
@@ -20,5 +19,4 @@ def blackAndWhite(image):
     return image
 
 bwImage = blackAndWhite(img)
-
 bwImage.show()

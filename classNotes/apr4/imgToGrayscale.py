@@ -1,10 +1,9 @@
 from PIL import Image
 
-img = Image.open('/bonsai.jpg')
+img = Image.open('/home/nabiel/PycharmProjects/Scientific-Computing-using-Python/classNotes/apr4/bonsai.jpg')
 
 def grayScale(image):
     (width, height) = image.size  
-
     for y in range(height):  
         for x in range(width):  
             (r, g, b) = image.getpixel((x, y))  
