@@ -1,9 +1,9 @@
 from PIL import Image
 
-def blur_image(input_image, radius=1):
-    input_image = Image.open(input_image)
+def blur_image(input_image_path, radius=1):
+    input_image = Image.open(input_image_path)
     width, height = input_image.size
- 
+    
     blurred_image = Image.new('RGB', (width, height))
     
     for x in range(width):
@@ -17,7 +17,6 @@ def blur_image(input_image, radius=1):
                     
                     if 0 <= nx < width and 0 <= ny < height:
                         r, g, b = input_image.getpixel((nx, ny))
-                        
                         sum_r += r
                         sum_g += g
                         sum_b += b
@@ -31,8 +30,13 @@ def blur_image(input_image, radius=1):
     
     return blurred_image
 
-input_image_path = 'img17.jpg'
-blurred_image_result = blur_image(input_image_path, radius=3)
-blurred_image_result.save('blurred_image_result.jpg')
+blurred_image = blur_image('./img17.jpg')
+blurred_image.show()
 
-print('Image blurred without using the Filter() method and saved successfully.')
+
+
+
+
+
+
+
