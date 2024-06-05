@@ -20,8 +20,8 @@ def reduce_image_size(input_image_path, new_width, new_height):
     return reduced_image
 
 input_image_path = 'img17.jpg'
-new_width = 400
-new_height = 300
+new_width = 1366
+new_height = 768
 resized_image = reduce_image_size(input_image_path, new_width, new_height)
 resized_image.show()
 
